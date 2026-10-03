@@ -1,6 +1,6 @@
 cask "procyon" do
-  version "0.0.7"
-  sha256 "04f943c7338e86605988fb091f016dccb5726b46bb2a8a7ec563e19fe6d73049"
+  version "0.1.0"
+  sha256 "85fbadfd66ae1408da4ddab728ab07054f165608e4de8d3d6ad45670adea7ec0"
 
   url "https://github.com/manhpham90vn/Procyon/releases/download/v#{version}/Procyon-#{version}.dmg"
   name "Procyon"
