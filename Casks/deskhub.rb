@@ -1,6 +1,6 @@
 cask "deskhub" do
-  version "9.2.0"
-  sha256 "3218bc7503d29abe053ac0f8cc7148ad44dc1f80279f9c803ef9876665b5a48c"
+  version "9.3.0"
+  sha256 "3bf93bb1402a42d381d528abd0d6069c4871a8f8bfb44b2c44e7e46a87720f80"
 
   url "https://github.com/manhpham90vn/Deskhub/releases/download/v#{version}/deskhub-v#{version}-macos.dmg"
   name "Deskhub"
@@ -10,6 +10,16 @@ cask "deskhub" do
   depends_on macos: ">= :sonoma"
 
   app "Deskhub.app"
+  binary "#{appdir}/Deskhub.app/Contents/MacOS/deskhub-cli"
 
-  zap trash: "~/.deskhub"
+  uninstall launchctl: [
+    "com.deskhub.macos.daemon",
+    "com.deskhub.macos.unattended",
+  ]
+
+  zap trash: [
+    "~/.deskhub",
+    "/Library/Application Support/Deskhub",
+    "/Library/LaunchAgents/com.deskhub.macos.unattended.plist",
+  ]
 end
