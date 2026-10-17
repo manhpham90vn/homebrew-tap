@@ -1,9 +1,9 @@
 class DeskhubCli < Formula
   desc "Command-line client for Deskhub, the LAN remote desktop"
   homepage "https://github.com/manhpham90vn/Deskhub"
-  url "https://github.com/manhpham90vn/Deskhub/releases/download/v9.1.0/deskhub-cli-v9.1.0-macos"
-  version "9.1.0"
-  sha256 "7ff1ecbe55e57735589d1f49d5a75fa07ef9107ea1a55bcc75b07969df141e8f"
+  url "https://github.com/manhpham90vn/Deskhub/releases/download/v9.2.0/deskhub-cli-v9.2.0-macos"
+  version "9.2.0"
+  sha256 "7582b495c9035bbb5ee572fdebd310bfa5bd312a8f1a452da3d95675e744c12d"
   license "MIT"
 
   depends_on :macos
