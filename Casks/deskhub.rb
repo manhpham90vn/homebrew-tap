@@ -1,6 +1,6 @@
 cask "deskhub" do
-  version "9.3.2"
-  sha256 "35c71b51349373b115b9f32db95e0b4d262a61de6d898cbf81afec8ee2fb1a25"
+  version "9.3.3"
+  sha256 "dbac2bee178c35d45ac32a411751048b99228bb2f072b971790d6be39e6b17ed"
 
   url "https://github.com/manhpham90vn/Deskhub/releases/download/v#{version}/deskhub-v#{version}-macos.dmg"
   name "Deskhub"
